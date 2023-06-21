@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
     <script>
       var isMobile = {
         Android: function () {
@@ -30,11 +34,9 @@
       };
 
       if (isMobile.Android()) {
-        document.location.href =
-          "/ecology.gltf";
+        document.location.href = "/ecology.gltf";
       } else if (isMobile.iOS()) {
-        document.location.href =
-          "/ecology.usd";
+        document.location.href = "/ecology.usd";
       }
 
       //glb and usdz
